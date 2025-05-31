@@ -8,9 +8,7 @@ import pandas as pd
 from dotenv import load_dotenv
 import os
 
-load_dotenv()
-
-genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
+genai.configure(api_key=st.secrets["GOOGLE_API_KEY"])
 
 st.set_page_config(page_title="AI Interviewer", layout="centered")
 
